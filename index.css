@@ -8,11 +8,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     padding-top: 50px;
     margin: 0;
     overflow-x: hidden;
 }
+
+* {
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
 /* idk fahh*/
 .window {
     width: 750px;
@@ -71,13 +78,106 @@ a {
 }
 
 
+@font-face {
+    font-family: "MSANS";
+    src: url("assets/ms_sans_serif.ttf");
+}
+
+body {
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 50px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height:fit-content;
+    padding-left: 10px;  
+}
+
+.content-section h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.content-section h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.window {
+    width: 750px;
+    height: 700px;
+    background-color: #c0c0c0;
+    border: 2px solid #000;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 2px 2px #404040;
+}
+
+
+.window-title {
+    background-color: #000080;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    height: 31px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 10px;
+}
+
+.window-endbtn {
+    padding-right: 15px;
+}
+
+
+.menu-bar {
+    background: #C0C0C0;
+    padding: 3px 6px;
+    border-bottom: 2px solid #808080;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+.content {
+    flex: 1;
+}
+
+
 .status-bar {
     background: #C0C0C0;
     padding: 4px;
     border-top: 2px solid #808080;
     font-size: 12px;
     width: 100%;
-    margin-top: 100% auto;
+    margin-top: auto;
     color: #404040;
 }
 
@@ -87,7 +187,3 @@ footer {
     unicode-bidi: isolate;
 }
 
-* {
-    font-family: "MS Sans Serif", Tahoma, sans-serif;
-    
-}
